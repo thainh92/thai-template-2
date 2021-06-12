@@ -53,7 +53,7 @@ a {
   color: #000;
 }
 .col {
-  width: 90vw;
+  width: 80vw;
   margin: auto;
 }
 .about-catering,
@@ -127,6 +127,9 @@ span {
 }
 .contact p {
   margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+  word-spacing: 0.5px;
+  line-height: 1.5rem;
 }
 .contact-form form {
   display: flex;
@@ -172,4 +175,23 @@ footer {
    {
     width: 100%;
   }
+  .logo {
+    height: 100%;
+    overflow: hidden;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-menu ul {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+  }
+  .nav-menu ul li {
+    width: 100%;
+  }
+}
+i {
+  display: none;
 }
