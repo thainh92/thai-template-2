@@ -5,19 +5,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/css.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <div class=container>
     <header>
       <nav>
       <div class="nav-menu">
-        <a class="logo" href="#">Gourmet au Catering</a>
-        <ul>
+        <a class="logo active" href="#">Gourmet au Catering</a>
+        <ul class="toggle-menu">
           <li><a href="#">About</a></li>
           <li><a href="#">Menu</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars nav-toggle-btn active"></i>
       </div>
       </nav>
       <div class="banner">
@@ -109,8 +110,16 @@
     </section>
     <footer>
       <p>&copy Made by Ngô Hồng Thái</p>
-      <a class="test">this is a tag</a>
     </footer>
   </div>
+
+  <script>
+    var toggle = document.querySelector(".nav-toggle-btn");
+    var menu = document.querySelector(".toggle-menu");
+
+    toggle.addEventListener("click", function() {
+      menu.classList.toggle("active");
+    })
+  </script>
 </body>
 </html>
